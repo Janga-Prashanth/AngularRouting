@@ -1,0 +1,25 @@
+<div class="btn-group mt-3" role="group" aria-label="Basic outlined example">
+    <button class="text-info mx-2" routerLink="/products" routerLinkActive="active" class="">All</button>
+    <button class="text-info mx-2" routerLink="/products" routerLinkActive="active"
+        [queryParams]="{'type': 'entertainment'}" class="btn btn-outline-primary">Entertainment</button>
+    <button class="text-info mx-2" routerLink="/products" routerLinkActive="active"
+        [queryParams]="{'category': 'Books','type': 'knowledge'}"
+        class="btn btn-outline-primary">Knowledge/Books</button>
+    <button class="text-info mx-2" routerLink="/products" routerLinkActive="active"
+        [queryParams]="{'category': 'Movies'}" class="btn btn-outline-primary">Movies</button>
+    <button class="text-info mx-2" (click)="navigate()" class="btn btn-outline-primary">Anime</button>  <!--Navigating without URL-->
+</div>
+<table class="table table-border table-hover">
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>type</th>
+        <th>category</th>
+    </tr>
+    <tr *ngFor="let m of products">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.type}}</td>
+        <td>{{m.category}}</td>
+    </tr>
+</table>

@@ -1,0 +1,5 @@
+<div>Click On Details to know more</div>
+<div *ngFor="let product of allproducts">
+    {{product.name}} <a [routerLink]="['/about/aboutproduct',product.id]" routerLinkActive="active">Details</a>
+</div>
+<router-outlet></router-outlet>

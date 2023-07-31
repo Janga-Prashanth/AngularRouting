@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularRouting';
+
+  constructor(private route: Router){}
+
+  //routing without ancor tags
+
+  navigate(){                          //navigating to the route without routerlinks
+    this.route.navigate(['/contact'])
+  }
 }

@@ -1,0 +1,16 @@
+<div class="table-responsive">
+    <table class="table table-responsive table-hover table-border">
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>rating</th>
+            <th>price</th>
+        </tr>
+        <tr *ngFor="let tp of tpdata">
+            <td>{{tp.id}}</td>
+            <td>{{tp.title}}</td>
+            <td>{{tp.rating.rate}}</td>
+            <td>{{tp.price}}$</td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,4 @@
+<div>Click On Details to know more</div>
+<div *ngFor="let p of product">
+    {{p.name}} <a routerLink="/contact/contactlist/{{p.id}}">Details</a> <!-- (click)="navigate()"-->
+</div>
