@@ -15,8 +15,8 @@ export class ContactComponent {
   product= this.ps.products;
 
   id=4;
+  
   navigate(){
     this.route.navigate(['/contact/contactlist/',this.id])
   }
-
 }

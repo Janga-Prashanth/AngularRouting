@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiserviceService } from '../services/apiservice.service';
-import { ActivatedRoute } from '@angular/router';
-import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-about',
@@ -16,9 +14,7 @@ export class AboutComponent implements OnInit{
     this.getallproducts();
   }
 
-  constructor(private api:ApiserviceService,
-     private ar: ActivatedRoute,
-     private ps:ProductService){}
+  constructor(private api:ApiserviceService){}
 
   allproducts:any;
   getallproducts(){

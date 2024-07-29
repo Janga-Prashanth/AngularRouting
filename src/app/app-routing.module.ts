@@ -34,7 +34,7 @@ const appRoute: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoute)    //Importing this to register "approute" in aplication
+    RouterModule.forRoot(appRoute)    //Importing this to register "approute" in application
   ],  
   exports: [RouterModule]
 })

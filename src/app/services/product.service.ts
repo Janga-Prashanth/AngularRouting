@@ -18,7 +18,7 @@ export class ProductService {
   ];
 
   lists = [
-    { id: 1, category: 'anime', type: 'entertainment', name: 'Deomen Slayer' },
+    { id: 1, category: 'anime', type: 'entertainment', name: 'Deomen Slayer'},
     { id: 2, category: 'anime', type: 'entertainment', name: 'Naruto' },
     { id: 3, category: 'anime', type: 'knowledge', name: 'Death Note' },
     { id: 4, category: 'anime', type: 'entertainment', name: 'One Piece' },

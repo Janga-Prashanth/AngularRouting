@@ -8,7 +8,7 @@ import { ProductService } from '../services/product.service';
 })
 export class HomeComponent {
 
-  constructor(private ps:ProductService){} 
+  constructor(private ps:ProductService){}  //public
 
   countries= this.ps.countries;
 }

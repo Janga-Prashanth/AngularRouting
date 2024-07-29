@@ -1,5 +1,11 @@
 <div>Click On Details to know more</div>
-<div *ngFor="let product of allproducts">
-    {{product.name}} <a [routerLink]="['/about/aboutproduct',product.id]" routerLinkActive="active">Details</a>
+<div class="row">
+    <div class="col-6">
+        <div *ngFor="let product of allproducts">
+            {{product.name}} <a [routerLink]="['/about/aboutproduct',product.id]" routerLinkActive="active">Details</a>
+        </div>
+    </div>
+    <div class="col-6 m-auto">
+        <router-outlet></router-outlet>
+    </div>
 </div>
-<router-outlet></router-outlet>
